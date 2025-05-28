@@ -1,0 +1,71 @@
+body {
+  cursor: url('../../assets/curseur/fishIcon.png'), auto; /* Ajoute ton curseur ici */
+}
+
+.menu-icon {
+  pointer-events: auto; /* ✅ rend cliquable même si parent ne l’est pas */
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1001; /* Assure qu'elle est au-dessus */
+}
+
+.line-container {
+  position: fixed;
+  right: 0%;
+  top: 0;
+  height: 100vh;
+  width: 100px;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.line {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    #d0f0ff,
+    #d0f0ff 5px,
+    #0088cc 5px,
+    #0088cc 10px
+  );
+  transform: translateX(-50%);
+}
+
+.line-item {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  pointer-events: auto;
+}
+
+.hook {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #00aaff;
+  margin-bottom: 6px;
+}
+
+.label {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: background 0.3s ease;
+}
+
+.line-item:hover .label {
+  background: rgba(0, 100, 200, 0.8);
+}
