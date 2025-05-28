@@ -1,13 +1,22 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
-import { useState, useEffect } from "react";
+import { useState } from "react";
+//Import des images--
+import iconBoatB from '../../assets/iconNavbar/iconBoatB.png';
+import iconForum from '../../assets/iconNavbar/iconForumB.png';
+import iconFish from '../../assets/iconNavbar/iconFishB.png';
+import iconPlonge from '../../assets/iconNavbar/iconPlongB.png';
+//Import LighthouseMenu --
+import { GiLighthouse } from "react-icons/gi";
+
+
 
 const items = [
-  { label: 'Spots', link: '#spots' },
-  { label: 'Espèces', link: '#especes' },
-  { label: 'Forum', link: '#forum' },
-  { label: 'Règlement', link: '#reglement' },
+  { label: 'Spots', link: '#spots', icon : iconBoatB },
+  { label: 'Espèces', link: '#especes', icon : iconFish },
+  { label: 'Forum', link: '#forum', icon : iconForum },
+  { label: 'Règlement', link: '#reglement', icon : iconPlonge },
 ];
 
 
@@ -27,13 +36,14 @@ export default function Header(){
           key={index}
           href={item.link}
           className="line-item"
-          style={{ top: `${index * 130 + 100}px` }}
+          style={{ top: `${index * 130 + 40}px` }}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 + index * 0.2, duration: 0.6 }}
           whileHover={{ scale: 1.1, rotate: [0, 1, -1, 0] }}
         >
-          <div className="hook" />
+          <img src={item.icon} alt={item.label} className="hook-img" />
+          {/* <div className="hook" />  cercle bleu, ci j'enleve faire aussi aprti css */}
           <div className="label">{item.label}</div>
         </motion.a>
       ))}

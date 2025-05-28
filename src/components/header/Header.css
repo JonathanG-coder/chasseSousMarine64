@@ -1,9 +1,9 @@
 .menu-icon {
-  pointer-events: auto; /* ✅ rend cliquable même si parent ne l’est pas */
+  pointer-events: auto; 
   position: absolute;
   top: 20px;
   left: 20px;
-  z-index: 1001; /* Assure qu'elle est au-dessus */
+  z-index: 1001; 
 }
 
 .line-container {
