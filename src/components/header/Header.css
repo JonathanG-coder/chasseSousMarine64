@@ -13,8 +13,13 @@
   height: 100vh;
   width: 100px;
   transform: translateX(-50%);
-  pointer-events: none;
+  pointer-events: auto;
   z-index: 1000;
+  background-color: #0088cc;
+}
+.line-container.dark {
+  background-color: #0088cc;
+  color: white;
 }
 
 .line {
@@ -42,6 +47,7 @@
   text-decoration: none;
   color: white;
   pointer-events: auto;
+  z-index: 1100;
 }
 
 .label {
@@ -61,4 +67,6 @@
 
 .hook-img{
   margin-left: 10px;
+  position: relative;  /* crée un contexte local */
+  z-index: 1200;
 }
