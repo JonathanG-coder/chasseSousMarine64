@@ -7,7 +7,7 @@ import iconBoatB from '../../assets/iconNavbar/iconBoatB.png';
 import iconForum from '../../assets/iconNavbar/iconForumB.png';
 import iconFish from '../../assets/iconNavbar/iconFishB.png';
 import iconPlonge from '../../assets/iconNavbar/iconPlongB.png';
-//Import LighthouseMenu --
+//Import LighthouseDarkMode   VOIR CI JE LE MET ICI ?? --
 import { GiLighthouse } from "react-icons/gi";
 
 
@@ -28,7 +28,7 @@ export default function Header(){
 
         <div className="line-container">
           <div className="menu-icon" onClick={toggleMenu}>
-          <i className={open ? "fas fa-times" : "fas fa-bars"}></i>
+          <i className={open ? "fas fa-times" : "fas fa-water"}></i>
         </div>
       <div className="line" />
       {open && items.map((item, index) => (
