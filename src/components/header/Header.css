@@ -52,6 +52,7 @@
   white-space: nowrap;
   transition: background 0.3s ease;
   margin-top: 5px;
+  margin-left: 10px;
 }
 
 .line-item:hover .label {

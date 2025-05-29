@@ -43,7 +43,6 @@ export default function Header(){
           whileHover={{ scale: 1.1, rotate: [0, 1, -1, 0] }}
         >
           <img src={item.icon} alt={item.label} className="hook-img" />
-          {/* <div className="hook" />  cercle bleu, ci j'enleve faire aussi aprti css */}
           <div className="label">{item.label}</div>
         </motion.a>
       ))}
