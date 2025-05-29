@@ -44,24 +44,20 @@
   pointer-events: auto;
 }
 
-.hook {
-  width: 12px;
-  height: 12px;
-  background: #fff;
-  border-radius: 50%;
-  border: 2px solid #00aaff;
-  margin-bottom: 6px;
-}
-
 .label {
   background: rgba(0, 0, 0, 0.6);
-  padding: 6px 12px;
+  padding: 2px;
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 13px;
   white-space: nowrap;
   transition: background 0.3s ease;
+  margin-top: 5px;
 }
 
 .line-item:hover .label {
   background: rgba(0, 100, 200, 0.8);
+}
+
+.hook-img{
+  margin-left: 10px;
 }
