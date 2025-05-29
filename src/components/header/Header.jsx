@@ -57,8 +57,7 @@ export default function Header() {
         {open ? <FaTimes size={28} /> : <FaWater size={28} />}
       </div>
 
-      <div className={`line ${darkMode ? 'dark' : ''}`} />
-
+      <div className="line" />
 
       {open &&
         items.map((item, index) => (
