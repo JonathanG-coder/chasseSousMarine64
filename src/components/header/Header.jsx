@@ -47,7 +47,7 @@ const items = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const { darkMode } = useTheme(); // 💡 Utilisation du contexte global
+  const { darkMode } = useTheme();  // import de useTheme via component ThemeContext
 
   const toggleMenu = () => setOpen(!open);
 
@@ -72,9 +72,7 @@ export default function Header() {
             whileHover={{ scale: 1.1, rotate: [0, 1, -1, 0] }}
           >
             <img
-              src={`${darkMode ? item.iconDark : item.iconLight}?v=${
-                darkMode ? "dark" : "light"
-              }`}
+              src={darkMode ? item.iconDark : item.iconLight}
               alt={item.label}
               className="hook-img"
             />

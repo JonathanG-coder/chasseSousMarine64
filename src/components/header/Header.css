@@ -12,7 +12,7 @@
   top: 0;
   height: 100vh;
   width: 100px;
-  transform: translateX(-50%);
+  transform: translateX(-20%);
   pointer-events: auto;
   z-index: 1000;
   background-color: #0088cc;
@@ -69,4 +69,33 @@
   margin-left: 10px;
   position: relative;  /* crée un contexte local */
   z-index: 1200;
+}
+
+
+@media screen and (max-width: 768px) {
+  .line-container {
+    width: 90px; 
+    transform: translateX(10); 
+  }
+
+  .menu-icon {
+    top: 10px;
+    left: 10px;
+  }
+
+  /* .line-item {
+  } */
+
+  .hook-img {
+    width: 40px; 
+    height: auto;
+    margin-left: 10;
+  }
+
+  .label {
+    font-size: 11px;
+    padding: 1px 4px;
+    margin-left: 5px;
+    margin-top: 3px;
+  }
 }
