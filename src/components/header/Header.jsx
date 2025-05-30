@@ -8,14 +8,14 @@ import { Link } from "react-router-dom";
 // Import des images en clair
 import iconBoatB from "../../assets/iconNavbar/iconBoatB.png";
 import iconFishB from "../../assets/iconNavbar/iconFishB.png";
-import iconForumB from "../../assets/iconNavbar/iconForumB.png";
 import iconPlongeB from "../../assets/iconNavbar/iconPlongB.png";
+import iconbubbleW from "../../assets/iconNavbar/iconbubbleW.png";
 
 // Import des images en sombre
 import iconBoatW from "../../assets/iconNavbar/iconBoatW.png";
 import iconFishW from "../../assets/iconNavbar/iconFishW.png";
-import iconForumW from "../../assets/iconNavbar/iconForumW.png";
 import iconPlongeW from "../../assets/iconNavbar/iconPlongW.png";
+import iconbubbleB from "../../assets/iconNavbar/iconbubbleB.png";
 
 // Liste des éléments du menu
 const items = [
@@ -34,8 +34,8 @@ const items = [
   {
     label: "Forum",
     link: "#forum",
-    iconLight: iconForumB,
-    iconDark: iconForumW,
+    iconLight: iconbubbleB,
+    iconDark: iconbubbleW,
   },
   {
     label: "Règlement",
