@@ -1,0 +1,20 @@
+.ThemeTOggleBody {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 50px;
+}
+
+
+img{
+    width: 60px;
+    height: auto;
+}
+
+button{
+    background-color: #0088cc;
+    border: none;
+}
+
+
+
