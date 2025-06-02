@@ -5,6 +5,11 @@ import "./ThemeToggle.css";
 import iconLightHouseB from "../../assets/iconDarkMode/lightHouseB.png";
 import iconLightHouseW from "../../assets/iconDarkMode/lightHouseW.png";
 
+//Import de WavyTitle pour faire bouger le titre
+import WavyTitle from "../header/wavyTitle/WavyTitle";
+import { h1, text } from "framer-motion/client";
+
+
 const lightIconW = iconLightHouseW
 const lightIconB = iconLightHouseB
 
@@ -17,7 +22,7 @@ export default function ThemeToggle() {
       <img src={darkMode ? lightIconB : lightIconW} alt="lightHouse" className="iconLightHouse"></img>
     </button>
     <div className="titleBanniere">
-    <h1>Chasse sous marine 64</h1>
+      <WavyTitle/>
     </div>
     </div>
   );
