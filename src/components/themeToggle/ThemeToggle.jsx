@@ -7,7 +7,7 @@ import iconLightHouseW from "../../assets/iconDarkMode/lightHouseW.png";
 
 //Import de WavyTitle pour faire bouger le titre
 import WavyTitle from "../header/wavyTitle/WavyTitle";
-import { h1, text } from "framer-motion/client";
+
 
 
 const lightIconW = iconLightHouseW
