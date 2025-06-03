@@ -9,3 +9,45 @@ html, body, #root, .App, .home-container {
   width: 100%;
   height: 100vh; /* pleine hauteur visible  pour accepter l'enfant (rappel : img animée) */
 }
+
+.titleBanniere {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10; /* au-dessus de WaterWaveEffect */
+  color: rgb(0, 0, 0); 
+}
+
+/* ===== Bouton du phare (gauche écran) ===== */
+.left-light-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
+}
+
+.iconLightHouse {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.iconLightHouse:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* ===== Images générales ===== */
+img {
+  width: 60px;
+  height: auto;
+}
+
+/* ===== Boutons ===== */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+}

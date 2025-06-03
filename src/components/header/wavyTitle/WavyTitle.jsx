@@ -6,7 +6,7 @@ import { animate, stagger } from "motion";
 import { splitText } from "motion-plus";
 import { useEffect, useRef } from "react";
 
-export default function WavyTitle({ text }) {
+export default function WavyTitle() {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -40,9 +40,9 @@ export default function WavyTitle({ text }) {
   return (
     <div className="container" ref={containerRef}>
       <h1 className="titleHeader">
-        chasse sous <span className="wavy">marine</span>.
-        {/* <span className="wavy">{text}</span> */}
-      </h1>
+  <span className="wavy">chasse sous marine.</span>
+</h1>
+
     </div>
   );
 }

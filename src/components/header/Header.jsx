@@ -1,7 +1,6 @@
 import "./Header.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { useTheme } from "../../context/themeContext";
 import { FaWater, FaTimes } from "react-icons/fa"; // Icons
 import { Link } from "react-router-dom";
 
@@ -16,6 +15,9 @@ import iconBoatW from "../../assets/iconNavbar/iconBoatW.png";
 import iconFishW from "../../assets/iconNavbar/iconFishW.png";
 import iconPlongeW from "../../assets/iconNavbar/iconPlongW.png";
 import iconbubbleB from "../../assets/iconNavbar/iconbubbleB.png";
+
+// Import des elements pour le DarkMode
+import { useTheme } from "../../context/themeContext";
 
 // Liste des éléments du menu
 const items = [
@@ -45,6 +47,8 @@ const items = [
   },
 ];
 
+
+
 export default function Header() {
   const [open, setOpen] = useState(false);
   const { darkMode } = useTheme();  // import de useTheme via component ThemeContext
@@ -52,6 +56,8 @@ export default function Header() {
   const toggleMenu = () => setOpen(!open);
 
   return (
+  <>
+  {/* Menu burger à droite */}
     <div className={`line-container ${darkMode ? "dark" : ""}`}>
       <div className="menu-icon" onClick={toggleMenu}>
         {open ? <FaTimes size={28} /> : <FaWater size={28} />}
@@ -76,10 +82,11 @@ export default function Header() {
               alt={item.label}
               className="hook-img"
             />
-
             <div className="label">{item.label}</div>
           </motion.a>
         ))}
     </div>
-  );
+  </>
+);
+
 }

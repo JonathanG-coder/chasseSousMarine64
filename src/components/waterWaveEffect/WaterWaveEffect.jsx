@@ -12,7 +12,7 @@ export default function WaterWaveEffect() {
     <WaterWave imageUrl={Waterimg} className="waterwave-wrapper">
       {() => (
         <div className="inside-waterwave">
-          <h1 className="waterwave-text">La mer est notre terrain de jeu</h1>
+          <p className="waterwave-text">La mer est notre terrain de jeu</p>
         </div>
       )}
     </WaterWave>
