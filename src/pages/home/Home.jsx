@@ -13,36 +13,31 @@ import iconLightHouseB from "../../assets/iconDarkMode/lightHouseB.png";
 import iconLightHouseW from "../../assets/iconDarkMode/lightHouseW.png";
 
 // Variable pour appeler les images.
-const lightIconW = iconLightHouseW
-const lightIconB = iconLightHouseB
-
+const lightIconW = iconLightHouseW;
+const lightIconB = iconLightHouseB;
 
 export default function Home() {
-  const { darkModeLightHouse, toggleDarkMode } = useTheme();
+  const { darkMode, toggleDarkMode } = useTheme();
 
   return (
     <>
-    
-    <div className="home-container">
-      <WaterWaveEffect />
-      
-      <div className="titleBanniere">
-        {/* Bouton DarkMode placé à gauche */}
-        <div className="left-light-toggle">
-          <button onClick={toggleDarkMode} className="light-toggle-btn">
-            <img
-              src={darkModeLightHouse ? lightIconB : lightIconW}
-              alt="lightHouse"
-              className="iconLightHouse"
-            />
-          </button>
-        </div>,
-            <WavyTitle/>
-          </div>
-      
-    </div>
-        </>
+      <div className="home-container">
+        <WaterWaveEffect />
 
+        <div className="titleBanniere">
+          <div className="title-row">
+            <button onClick={toggleDarkMode} className="light-toggle-btn">
+              <img
+                src={darkMode ? lightIconB : lightIconW}
+                alt="lightHouse"
+                className="iconLightHouse large"
+              />
+            </button>
+            <WavyTitle />
+          </div>
+          <p className="slogan">Explorez les profondeurs en toute liberté</p>
+        </div>
+      </div>
+    </>
   );
 }
-
