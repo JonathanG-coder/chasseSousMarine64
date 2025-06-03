@@ -23,7 +23,7 @@ import { useTheme } from "../../context/themeContext";
 const items = [
   {
     label: "Spots",
-    link: "#spots",
+    link: "/spots",
     iconLight: iconBoatB,
     iconDark: iconBoatW,
   },

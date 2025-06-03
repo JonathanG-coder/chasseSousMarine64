@@ -15,7 +15,7 @@ html, body, #root, .App, .home-container {
 /* ===== Bannière avec titre + slogan ===== */
 .titleBanniere {
   position: absolute;
-  top: 50%; /* Centré verticalement */
+  top: 50%; 
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -41,7 +41,7 @@ html, body, #root, .App, .home-container {
 
 /* ===== Image du phare ===== */
 .iconLightHouse {
-  width: 90px; /* Plus gros */
+  width: 90px; 
   height: auto;
   transition: transform 0.3s ease;
 }
@@ -50,9 +50,8 @@ html, body, #root, .App, .home-container {
   transform: scale(1.1) rotate(5deg);
 }
 
-/* ===== Titre animé (géré dans WavyTitle.css mais renforcé ici au besoin) ===== */
 .titleHeader {
-  font-size: clamp(3rem, 8vw, 6rem); /* Plus grand pour un impact visuel */
+  font-size: clamp(3rem, 8vw, 6rem); 
   font-weight: bold;
   margin: 0;
   padding: 0.5em 0;
