@@ -23,31 +23,29 @@ import { useTheme } from "../../context/themeContext";
 const items = [
   {
     label: "Spots",
-    link: "/spots",
+    link: "/spot",
     iconLight: iconBoatB,
     iconDark: iconBoatW,
   },
   {
     label: "Espèces",
-    link: "#especes",
+    link: "/especes",
     iconLight: iconFishB,
     iconDark: iconFishW,
   },
   {
     label: "Forum",
-    link: "#forum",
+    link: "/forum",
     iconLight: iconbubbleB,
     iconDark: iconbubbleW,
   },
   {
     label: "Règlement",
-    link: "#reglement",
+    link: "/reglement",
     iconLight: iconPlongeB,
     iconDark: iconPlongeW,
   },
 ];
-
-
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -56,37 +54,37 @@ export default function Header() {
   const toggleMenu = () => setOpen(!open);
 
   return (
-  <>
-  {/* Menu burger à droite */}
-    <div className={`line-container ${darkMode ? "dark" : ""}`}>
-      <div className="menu-icon" onClick={toggleMenu}>
-        {open ? <FaTimes size={28} /> : <FaWater size={28} />}
+    <>
+      {/* Menu burger à droite */}
+      <div className={`line-container ${darkMode ? "dark" : ""}`}>
+        <div className="menu-icon" onClick={toggleMenu}>
+          {open ? <FaTimes size={28} /> : <FaWater size={28} />}
+        </div>
+
+        <div className="line" />
+
+        {open &&
+          items.map((item, index) => (
+            <motion.div
+              key={index}
+              className="line-item"
+              style={{ top: `${index * 130 + 40}px`, position: "absolute" }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 + index * 0.2, duration: 0.6 }}
+              whileHover={{ scale: 1.1, rotate: [0, 1, -1, 0] }}
+            >
+              <Link to={item.link}>
+                <img
+                  src={darkMode ? item.iconDark : item.iconLight}
+                  alt={item.label}
+                  className="hook-img"
+                />
+                <div className="label">{item.label}</div>
+              </Link>
+            </motion.div>
+          ))}
       </div>
-
-      <div className="line" />
-
-      {open &&
-        items.map((item, index) => (
-          <motion.a
-            key={index}
-            href={item.link}
-            className="line-item"
-            style={{ top: `${index * 130 + 40}px` }}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 + index * 0.2, duration: 0.6 }}
-            whileHover={{ scale: 1.1, rotate: [0, 1, -1, 0] }}
-          >
-            <img
-              src={darkMode ? item.iconDark : item.iconLight}
-              alt={item.label}
-              className="hook-img"
-            />
-            <div className="label">{item.label}</div>
-          </motion.a>
-        ))}
-    </div>
-  </>
-);
-
+    </>
+  );
 }

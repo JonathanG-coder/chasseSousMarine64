@@ -1,6 +1,9 @@
+// https://github.com/tomickigrzegorz/react-leaflet-examples
+// Lien github du code pour la map personnalisé
+
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
-import pinIcon from "../../assets/pin.png"; 
+import pinIcon from "../../assets/pin.png";
 
 // Coordonnées de Saint-Jean-de-Luz (64, France)
 const position = [43.3889, -1.6614];
@@ -29,6 +32,15 @@ const Spot = () => {
 
         <Marker position={position} icon={customIcon}>
           <Popup>
+            {/* Modifier le lien  */}
+            <figure>  
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/A-10_Sukiennice_w_Krakowie_Krak%C3%B3w%2C_Rynek_G%C5%82%C3%B3wny_MM.jpg/1920px-A-10_Sukiennice_w_Krakowie_Krak%C3%B3w%2C_Rynek_G%C5%82%C3%B3wny_MM.jpg"
+                alt="Kraków"
+                width="100%"
+              />
+              <figcaption>Source: wikipedia.org</figcaption>
+            </figure>
             Saint-Jean-de-Luz, une ville charmante de la Côte Basque 🇫🇷
           </Popup>
         </Marker>
