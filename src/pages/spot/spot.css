@@ -17,7 +17,7 @@ html, body, #root {
   width: 100%;
 }
 
-/* Style général du contenu du popup */
+/* Style général du contenu du popup, similaire à une div */
 .leaflet-popup-content {
   max-width: 200px;
   font-family: "Segoe UI", sans-serif;
