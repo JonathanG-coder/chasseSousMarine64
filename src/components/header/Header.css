@@ -75,6 +75,12 @@ svg {
   margin-left: 10px;
 }
 
+.line-item a {
+  text-decoration: none;
+  color: white;
+}
+
+
 .line-item:hover .label {
   background: rgba(7, 84, 173, 0.8);
 }
