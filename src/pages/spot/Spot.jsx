@@ -1,49 +1,107 @@
-// https://github.com/tomickigrzegorz/react-leaflet-examples
-// Lien GitHub du code pour la map personnalisée
-
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import pinIcon from "../../assets/pin.png";
-import "./Spot.css"; // 
+import "./Spot.css";
 
-// Coordonnées de Saint-Jean-de-Luz (64, France)
-const position = [43.3889, -1.6614];
+//Import des images 
+import Erromardie from "../../assets/spotImg/Erromardie.jpg";
+import Biarritz from "../../assets/spotImg/Biarritz.jpg";
+import DigueDeAdour from "../../assets/spotImg/DigueDeAdour.jpg";
+import LesRochesNoires from "../../assets/spotImg/LesRochesNoires.webp";
+import RocherduSousMarin from "../../assets/spotImg/RocherduSousMarin.avif";
+import Socoa from "../../assets/spotImg/Socoa.jpg";
+import SainteBarbe from "../../assets/spotImg/SainteBarbe.webp";
+import Cenitz from "../../assets/spotImg/Cenitz.jpg";
+
+
 
 // Icône personnalisée
 const customIcon = new L.Icon({
   iconUrl: pinIcon,
-  iconSize: [30, 35],       // taille réduite
-  iconAnchor: [15, 35],     // ajusté pour garder le point bas au bon endroit
-  popupAnchor: [0, -35],    // ajuste la position du popup
+  iconSize: [30, 35],
+  iconAnchor: [15, 35],
+  popupAnchor: [0, -35],
 });
+
+// Liste des spots de chasse sous-marine avec leurs infos
+const spots = [
+  {
+    position: [43.4074, -1.6409],
+    title: "Plage d’Erromardie - Saint jean de Luz",
+    image: Erromardie,
+    description: "Plateau rocheux accessible depuis la plage, très bon spot pour les débutants.",
+  },
+  {
+    position: [43.39624582124131, -1.682992973502502],
+    title: "Socoa / Fort de Socoa  - Saint jean de Luz",
+    image: Socoa,
+    description: "Zone protégée, idéale pour débutants.",
+  },
+  {
+    position: [43.399673692625065, -1.6649595546067617],
+    title: "Pointe Sainte-Barbe  - Saint jean de Luz",
+    image: SainteBarbe,
+    description: "Zone rocheuse accessible à la palme.",
+  },
+  {
+    position: [43.42195894265778, -1.6204711868039867],
+    title: "Plage de Cenitz  - Guéthary",
+    image: Cenitz,
+    description: "Excellent plateau rocheux.",
+  },
+  {
+    position: [43.48471991023966, -1.5705483996670981], 
+    title: "Rocher de la vierge – Biarritz",
+    image: Biarritz,
+    description: "Spot emblématique aux fonds variés, idéal pour la chasse et l’exploration.",
+  },
+  {
+    position: [43.3827, -1.7681],
+    title: "Les Roches Noires – Hendaye",
+    image: LesRochesNoires,
+    description: "Zone rocheuse très poissonneuse, parfaite pour les chasseurs expérimentés.",
+  },
+  {
+    position: [43.3791, -1.7689],
+    title: "Rocher du Sous-Marin – Hendaye",
+    image: RocherduSousMarin,
+    description: "Rocher emblématique avec un fond riche en vie marine, chasse accessible à marée basse.",
+  },
+  {
+    position: [43.53228544409896, -1.5330919170579198],
+    title: "Digue de l’Adour – Anglet",
+    image: DigueDeAdour,
+    description: "Spot à fort courant, mais très productif. À réserver aux chasseurs expérimentés.",
+  },
+];
 
 const Spot = () => {
   return (
     <div className="map-container">
       <MapContainer
-        center={position}
-        zoom={14}
+        center={[43.42, -1.65]}
+        zoom={12}
         scrollWheelZoom={true}
         style={{ height: "100%", width: "100%" }}
       >
+        {/* Partie bas-droite avec attribution = ne pas supprimer */}
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
-        <Marker position={position} icon={customIcon}>
-          <Popup>
-            <figure>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/A-10_Sukiennice_w_Krakowie_Krak%C3%B3w%2C_Rynek_G%C5%82%C3%B3wny_MM.jpg/1920px-A-10_Sukiennice_w_Krakowie_Krak%C3%B3w%2C_Rynek_G%C5%82%C3%B3wny_MM.jpg"
-                alt="Kraków"
-                width="100%"
-              />
-              <figcaption>Source: wikipedia.org</figcaption>
-            </figure>
-            Saint-Jean-de-Luz, une ville charmante de la Côte Basque 🇫🇷
-          </Popup>
-        </Marker>
+        {/* Marqueurs dynamiques pour appeler les différents spots.  */}
+        {spots.map((spot, index) => (
+          <Marker key={index} position={spot.position} icon={customIcon}>
+            <Popup>
+              <figure>
+                <img src={spot.image} alt={spot.title} width="100%" />
+                <figcaption>{spot.title}</figcaption>
+              </figure>
+              {spot.description}
+            </Popup>
+          </Marker>
+        ))}
       </MapContainer>
     </div>
   );
