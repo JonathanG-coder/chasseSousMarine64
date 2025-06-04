@@ -1,9 +1,10 @@
 // https://github.com/tomickigrzegorz/react-leaflet-examples
-// Lien github du code pour la map personnalisé
+// Lien GitHub du code pour la map personnalisée
 
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import pinIcon from "../../assets/pin.png";
+import "./Spot.css"; // 
 
 // Coordonnées de Saint-Jean-de-Luz (64, France)
 const position = [43.3889, -1.6614];
@@ -11,14 +12,14 @@ const position = [43.3889, -1.6614];
 // Icône personnalisée
 const customIcon = new L.Icon({
   iconUrl: pinIcon,
-  iconSize: [50, 58],
-  iconAnchor: [20, 58],
-  popupAnchor: [0, -60],
+  iconSize: [30, 35],       // taille réduite
+  iconAnchor: [15, 35],     // ajusté pour garder le point bas au bon endroit
+  popupAnchor: [0, -35],    // ajuste la position du popup
 });
 
 const Spot = () => {
   return (
-    <div style={{ height: "100vh", width: "100%" }}>
+    <div className="map-container">
       <MapContainer
         center={position}
         zoom={14}
@@ -32,8 +33,7 @@ const Spot = () => {
 
         <Marker position={position} icon={customIcon}>
           <Popup>
-            {/* Modifier le lien  */}
-            <figure>  
+            <figure>
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/A-10_Sukiennice_w_Krakowie_Krak%C3%B3w%2C_Rynek_G%C5%82%C3%B3wny_MM.jpg/1920px-A-10_Sukiennice_w_Krakowie_Krak%C3%B3w%2C_Rynek_G%C5%82%C3%B3wny_MM.jpg"
                 alt="Kraków"
