@@ -98,7 +98,7 @@ const Spot = () => {
                 <img src={spot.image} alt={spot.title} width="100%" />
                 <figcaption>{spot.title}</figcaption>
               </figure>
-              {spot.description}
+              <p>{spot.description}</p>
             </Popup>
           </Marker>
         ))}
