@@ -1,104 +1,230 @@
-// 🐟 Poissons côtiers fréquents
-// Bar (Loup de mer) – Dicentrarchus labrax
-// ⭐ Présent toute l’année, surtout en été près des vagues et rochers. Méfiant et très recherché.
-
-// **Sars (commun, à tête noire, tambour) – Diplodus spp.
-// ⭐ Très abondants sur les zones rocheuses. Poissons de bordures, souvent curieux.
-
-// Dorade royale – Sparus aurata
-// ⭐ Présente dans les fonds rocheux et herbiers. Plus active en été.
-
-// **Mulet – Mugil spp.
-// ⭐ Très fréquent sur la côte basque, en bancs. Espèce typique de surface ou port/digue.
-
-// Vieille (Labre) – Labrus bergylta
-// ⭐ Poisson très commun dans les rochers. Colorée et facile à approcher.
-
-// Tacaud – Trisopterus luscus
-// ⭐ Présent dans les zones rocheuses ou en bordure de sable. Parfois en petits groupes.
-
-// **Gobies et blennies – Gobius spp., Parablennius spp.
-// ⭐ Petits poissons de rochers très courants. Peu pêchés, mais typiques des anfractuosités.
-
-// Grondin – Chelidonichthys lucerna
-// ✅ Peut se croiser sur les zones sableuses ou mixtes, surtout en fin d'été.
-
-// Poisson-perroquet – Sparisoma cretense (rare)
-// 🔍 Observé occasionnellement sur la côte basque, notamment avec le réchauffement.
-
-// 🦞 Crustacés présents sur la côte
-// Tourteau – Cancer pagurus
-// ⭐ Fréquent sur les zones rocheuses ou sableuses. Se cache sous les rochers.
-
-// Araignée de mer – Maja squinado
-// ⭐ Très fréquente au printemps et début d’été. Présente sur les zones mixtes.
-
-// Homard – Homarus gammarus
-// ✅ Plus rare, mais présent dans les failles profondes des roches côtières.
-
-// 🐙 Céphalopodes observables en bord de côte
-// Poulpe – Octopus vulgaris
-// ⭐ Très commun. Se camoufle dans les rochers. Facilement visible à marée basse aussi.
-
-// Seiche – Sepia officinalis
-// ✅ Parfois visible sur les fonds sableux ou près des herbiers, surtout au printemps.
-
-// 🌱 Espèces non comestibles mais typiques
-// Baliste (rare) – Balistes capriscus
-// 🔍 Parfois observé en été, sur les zones rocheuses. Poisson curieux.
-
-// Roussette (petit requin) – Scyliorhinus canicula
-// ✅ Présente sur les fonds sableux, en profondeur moyenne.
-
-// 🪸 Faune et flore marine côtière du 64
+// 🪸 Faune et flore marine côtière du 64  A GARDER COMME TITRE !!!!!!
 // 🌿 Végétaux marins et algues
-// Herbiers de zostères – Zostera marina
-// ✅ Zones herbeuses sous-marines présentes dans les baies calmes et les zones sableuses. Refuge pour petits poissons.
+// 🐙 Céphalopodes observables en bord de côte
+// 🦞 Crustacés présents sur la côte
+// 🐟 Poissons côtiers fréquents
 
-// Algues rouges (Corallines, Gelidium…)
-// ⭐ Très présentes sur les rochers. Forment de beaux tapis violets ou rouges.
+const Especes = () => {
+    
+    const Poissons =[
+        {
+            nom: "Poisson-perroquet", 
+            description: "Observé occasionnellement sur la côte basque, notamment avec le réchauffement." ,
+            image: ""
 
-// Algues brunes (Fucus, Laminaires)
-// ⭐ Fréquentes sur l’estran et sous l’eau peu profonde. Abritent crabes, petits poissons.
+        },
+        {
+            nom: "Grondin", 
+            description: "Peut se croiser sur les zones sableuses ou mixtes, surtout en fin d'été." ,
+            image: ""
 
-// Sargasses – Sargassum muticum
-// ✅ Algue invasive qui forme de grandes touffes, visible surtout en été.
+        },
+        {
+            nom: "Gobies et blennies", 
+            description: "Petits poissons de rochers très courants. Peu pêchés, mais typiques des anfractuosités." ,
+            image: ""
 
-// 🪸 Invertébrés et animaux fixés
-// Anémones de mer – Anemonia viridis
-// ⭐ Très visibles sur les rochers peu profonds. Couleur verte avec reflets violets. Parfois urticantes.
+        },
+        {
+            nom: "Tacaud", 
+            description: "Présent dans les zones rocheuses ou en bordure de sable. Parfois en petits groupes." ,
+            image: ""
 
-// Éponges marines – Diverses espèces
-// ✅ Fixées sur les rochers. De formes variées, souvent orange, jaunes ou grises.
+        },
+        {
+            nom: "Vieille", 
+            description: "Poisson très commun dans les rochers. Colorée et facile à approcher." ,
+            image: ""
 
-// Oursins violets – Paracentrotus lividus
-// ⭐ Très communs. Ils se nourrissent d’algues et creusent parfois les rochers.
+        },
+        {
+            nom: "Mulet", 
+            description: "Très fréquent sur la côte basque, en bancs. Espèce typique de surface ou port/digue." ,
+            image: ""
 
-// **Petites ascidies – Clavelina, Didemnum spp.
-// 🔍 Colonies transparentes ou colorées fixées aux rochers.
+        },
+        {
+            nom: "Bar (Loup de mer)", 
+            description: "Présent toute l’année, surtout en été près des vagues et rochers. Méfiant et très recherché." ,
+            image: ""
 
-// **Patelles (chapeaux chinois) – Patella spp.
-// ✅ Mollusques collés aux rochers. Typiques des zones à marée.
+        },
+        {
+            nom: "Sars (commun, à tête noire, tambour)", 
+            description: "Très abondants sur les zones rocheuses. Poissons de bordures, souvent curieux." ,
+            image: ""
 
-// 🐚 Coquillages visibles ou ramassables
-// Bigorneaux – Littorina spp.
-// ⭐ Petits escargots marins présents sur l’estran.
+        },
+        {
+            nom: "Dorade royale", 
+            description: "Présente dans les fonds rocheux et herbiers. Plus active en été." ,
+            image: ""
 
-// Ormeaux – Haliotis tuberculata
-// 🔍 Très rare et réglementé. Coquillage plat caché sous les rochers.
+        },
+        {
+            nom: "Baliste", 
+            description: "Parfois observé en été, sur les zones rocheuses. Poisson curieux." ,
+            image: ""
 
-// Palourdes et coques – Ruditapes, Cerastoderma
-// ✅ Enterrées dans le sable en zone calme. Peu visibles en plongée mais présentes.
+        },
+        {
+            nom: "Roussette (petit requin)", 
+            description: "Présente sur les fonds sableux, en profondeur moyenne." ,
+            image: ""
 
-// 🪸 Rochers et fonds typiques de la côte basque
-// Tombants rocheux
-// ⭐ Typiques de la côte. Grottes, failles et caches à poissons.
+        },
+    ];
 
-// Dalles rocheuses plates
-// ✅ Zones peu profondes riches en vie. Parfaites pour la chasse du bord.
+    const Crustaces =[
+        {
+            nom: "Tourteau", 
+            description: "Fréquent sur les zones rocheuses ou sableuses. Se cache sous les rochers." ,
+            image: ""
 
-// Zones sableuses mixtes
-// ✅ Abritent poissons plats, céphalopodes, araignées de mer.
+        },
+         {
+            nom: "Araignée de mer", 
+            description: "Très fréquente au printemps et début d’été. Présente sur les zones mixtes." ,
+            image: ""
 
-// Épaves (petites)
-// 🔍 Il en existe quelques-unes accessibles en apnée ou en PMT, souvent riches en vie.
+        },
+         {
+            nom: "Homard", 
+            description: "Plus rare, mais présent dans les failles profondes des roches côtières." ,
+            image: ""
+
+        },
+    ];
+
+
+    
+    const Cephalopodes =[
+        {
+            nom: "Poulpe", 
+            description: "Très commun. Se camoufle dans les rochers. Facilement visible à marée basse aussi." ,
+            image: ""
+
+        },
+        {
+            nom: "Seiche", 
+            description: "Parfois visible sur les fonds sableux ou près des herbiers, surtout au printemps." ,
+            image: ""
+
+        },
+    ];
+
+    const VégétauxMarinsAlgues =[
+        {
+            nom: "Sargasses", 
+            description: "Algue invasive qui forme de grandes touffes, visible surtout en été." ,
+            image: ""
+
+        },
+        {
+            nom: "Algues brunes", 
+            description: "Fréquentes sur l’estran et sous l’eau peu profonde. Abritent crabes, petits poissons." ,
+            image: ""
+
+        },
+        {
+            nom: "Algues rouges", 
+            description: "Très présentes sur les rochers. Forment de beaux tapis violets ou rouges." ,
+            image: ""
+
+        },
+        {
+            nom: "Herbiers de zostères", 
+            description: "Mollusques collés aux rochers. Typiques des zones à marée." ,
+            image: ""
+
+        },
+    ];
+    const InvertebresAnimauxFixes =[
+        {
+            nom: "Patelles (chapeaux chinois)", 
+            description: "Mollusques collés aux rochers. Typiques des zones à marée." ,
+            image: ""
+
+        },
+        {
+            nom: "Petites ascidies", 
+            description: "Colonies transparentes ou colorées fixées aux rochers." ,
+            image: ""
+
+        },
+        {
+            nom: "Oursins violets", 
+            description: "Très communs. Ils se nourrissent d’algues et creusent parfois les rochers." ,
+            image: ""
+
+        },
+        {
+            nom: "Éponges marines", 
+            description: "Fixées sur les rochers. De formes variées, souvent orange, jaunes ou grises." ,
+            image: ""
+
+        },
+        {
+            nom: "Anémones de mer", 
+            description: "Très visibles sur les rochers peu profonds. Couleur verte avec reflets violets. Parfois urticantes." ,
+            image: ""
+
+        }
+    ];
+    const Coquillages =[
+        {
+            nom: "Bigorneaux", 
+            description: "Petits escargots marins présents sur l’estran." ,
+            image: ""
+
+        },
+        {
+            nom: "Ormeaux", 
+            description: "Très rare et réglementé. Coquillage plat caché sous les rochers." ,
+            image: ""
+
+        },
+        {
+            nom: "Palourdes et coques", 
+            description: "Enterrées dans le sable en zone calme. Peu visibles en plongée mais présentes." ,
+            image: ""
+
+        }
+    ];
+
+    const Rochers =[
+        {
+            nom: "Tombants rocheux", 
+            description:"Typiques de la côte. Grottes, failles et caches à poissons." ,
+            image: ""
+
+        },
+        {
+            nom: "Dalles rocheuses plates", 
+            description:"Zones peu profondes riches en vie. Parfaites pour la chasse du bord." ,
+            image: ""
+
+        },
+        {
+            nom:"Zones sableuses mixtes" , 
+            description:"Abritent poissons plats, céphalopodes, araignées de mer." ,
+            image:""
+
+        },
+        {
+            nom:"Épaves (petites)" , 
+            description:"Il en existe quelques-unes accessibles en apnée ou en PMT, souvent riches en vie." ,
+            image:""
+
+        }
+    ]
+    
+  return (
+    <div className="especes-container">
+
+        
+    </div>
+  )
+}
+
+export default Especes
