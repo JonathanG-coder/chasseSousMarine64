@@ -1,12 +1,25 @@
-.category-grid {
+
+/* * {
+  outline: 1px solid rgba(255, 0, 0, 0.5);
+} */
+
+body {
+  overflow-x: hidden;
+}
+
+.categoryGrid {
   display: grid;
+  gap: 30px;
+  max-width: 1000px; 
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 200px);
   grid-template-areas:
     "poissons crustaces cephalopodes"
     "algues coquillages roches";
-  gap: 20px;
-  padding: 20px;
+  
 }
 
 .grid-item {
