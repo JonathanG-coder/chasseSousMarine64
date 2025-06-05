@@ -4,6 +4,8 @@
 // 🦞 Crustacés présents sur la côte
 // 🐟 Poissons côtiers fréquents
 
+import { div } from "framer-motion/client";
+
 const Especes = () => {
     
     const Poissons =[
@@ -217,7 +219,28 @@ const Especes = () => {
             image:""
 
         }
-    ]
+    ];
+
+    const renderCategory = (title , items) => (
+        <div>
+            <h2>{title}</h2>
+            <div>
+                {items.map((item, index) => (
+                    <div key={index}>
+                        <img src={item.image} alt={item.nom}/>
+                        <h4>{item.nom}</h4>
+                        <p>{item.description}</p>
+                    </div>
+                ))}
+            </div>
+        </div>
+
+
+
+    );
+
+
+
     
   return (
     <div className="especes-container">
