@@ -8,13 +8,13 @@ import { Link } from "react-router-dom";
 import iconBoatB from "../../assets/iconNavbar/iconBoatB.png";
 import iconFishB from "../../assets/iconNavbar/iconFishB.png";
 import iconPlongeB from "../../assets/iconNavbar/iconPlongB.png";
-import iconbubbleW from "../../assets/iconNavbar/iconbubbleW.png";
+import iconbubbleW from "../../assets/iconNavbar/iconBubbleW.png";
 
 // Import des images en sombre
 import iconBoatW from "../../assets/iconNavbar/iconBoatW.png";
 import iconFishW from "../../assets/iconNavbar/iconFishW.png";
 import iconPlongeW from "../../assets/iconNavbar/iconPlongW.png";
-import iconbubbleB from "../../assets/iconNavbar/iconbubbleB.png";
+import iconbubbleB from "../../assets/iconNavbar/iconBubbleB.png";
 
 // Import des elements pour le DarkMode
 import { useTheme } from "../../context/themeContext";
