@@ -10,8 +10,6 @@ import WavyTitle from "../../components/header/wavyTitle/WavyTitle";
 // Import des elements pour le DarkMode
 import { useTheme } from "../../context/themeContext";
 // Import des images en clair et sombre
-import iconLightHouseB from "../../assets/iconDarkMode/lighthouse-b.png";
-import iconLightHouseW from "../../assets/iconDarkMode/lighthouse-w.png";
 
 
 // Variable pour appeler les images.
