@@ -6,13 +6,13 @@ import { FaWater, FaTimes } from "react-icons/fa"; // Icons
 import { Link } from "react-router-dom";
 
 // Import des images en sombre
-import iconBoatB from "../../assets/iconNavbar/icon-boat-b.png";
+import iconBoatB from "../../assets/iconNavbar/icon-boat-b.png"
 import iconFishB from "../../assets/iconNavbar/icon-fish-b.png";
 import iconPlongB from "../../assets/iconNavbar/icon-plong-b.png";
 import iconBubbleW from "../../assets/iconNavbar/icon-bubble-w.png";
 
 // Import des images en clair
-import iconBoatW from "../../assets/iconNavbar/icon-boat-w.png";
+import iconBoatW from "../../assets/iconNavbar/icon-boat-w.png"
 import iconFishW from "../../assets/iconNavbar/icon-fish-w.png";
 import iconPlongW from "../../assets/iconNavbar/icon-plong-w.png";
 import iconBubbleB from "../../assets/iconNavbar/icon-bubble-b.png";
