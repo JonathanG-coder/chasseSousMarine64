@@ -7,11 +7,11 @@ import WaterWave from 'react-water-wave';
 import './WaterWaveEffect.css';
 
 // Import de l'image
-
+import waterImg from "../../assets/water-img.jpg";
 
 export default function WaterWaveEffect() {
   return (
-    <WaterWave imageUrl={Waterimg} className="waterwave-wrapper">
+    <WaterWave imageUrl={waterImg} className="waterwave-wrapper">
       {() => (
         <div className="inside-waterwave">
           {/* <p className="waterwave-text">La mer est notre terrain de jeu</p> */}
