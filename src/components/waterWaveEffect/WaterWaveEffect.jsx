@@ -4,9 +4,10 @@
 
 import React from 'react';
 import WaterWave from 'react-water-wave';
-import Waterimg from '../../assets/Waterimg.jpg';
-// import Waterimg from '../../assets/Waterimgg.jpg'
 import './WaterWaveEffect.css';
+
+// Import de l'image
+
 
 export default function WaterWaveEffect() {
   return (
