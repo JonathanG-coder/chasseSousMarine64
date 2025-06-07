@@ -4,16 +4,15 @@ import L from "leaflet";
 import pinIcon from "../../assets/pin.png";
 import "./Spot.css";
 
-//Import des images 
-import Erromardie from "../../assets/spotImg/Erromardie.jpg";
-import Biarritz from "../../assets/spotImg/Biarritz.jpg";
-import DigueDeAdour from "../../assets/spotImg/DigueDeAdour.jpg";
-import LesRochesNoires from "../../assets/spotImg/LesRochesNoires.webp";
-import RocherduSousMarin from "../../assets/spotImg/RocherduSousMarin.avif";
-import Socoa from "../../assets/spotImg/Socoa.jpg";
-import SainteBarbe from "../../assets/spotImg/SainteBarbe.webp";
-import Cenitz from "../../assets/spotImg/Cenitz.jpg";
-
+// Import des images
+import erromardie from "../../assets/spotImg/erromardie.jpg";
+import biarritz from "../../assets/spotImg/biarritz.jpg";
+import digueDeAdour from "../../assets/spotImg/digue-de-adour.jpg";
+import lesRochesNoires from "../../assets/spotImg/les-roches-noires.webp";
+import rocherDuSousMarin from "../../assets/spotImg/rocher-du-sous-marin.avif";
+import socoa from "../../assets/spotImg/socoa.jpg";
+import sainteBarbe from "../../assets/spotImg/sainte-barbe.webp";
+import cenitz from "../../assets/spotImg/cenitz.jpg";
 
 
 // Icône personnalisée
@@ -29,49 +28,49 @@ const spots = [
   {
     position: [43.4074, -1.6409],
     title: "Plage d’Erromardie - Saint jean de Luz",
-    image: Erromardie,
+    image: erromardie,
     description: "Plateau rocheux accessible depuis la plage, très bon spot pour les débutants.",
   },
   {
     position: [43.39624582124131, -1.682992973502502],
     title: "Socoa / Fort de Socoa  - Saint jean de Luz",
-    image: Socoa,
+    image: socoa,
     description: "Zone protégée, idéale pour débutants.",
   },
   {
     position: [43.399673692625065, -1.6649595546067617],
     title: "Pointe Sainte-Barbe  - Saint jean de Luz",
-    image: SainteBarbe,
+    image: sainteBarbe,
     description: "Zone rocheuse accessible à la palme.",
   },
   {
     position: [43.42195894265778, -1.6204711868039867],
     title: "Plage de Cenitz  - Guéthary",
-    image: Cenitz,
+    image: cenitz,
     description: "Excellent plateau rocheux.",
   },
   {
     position: [43.48471991023966, -1.5705483996670981], 
     title: "Rocher de la vierge – Biarritz",
-    image: Biarritz,
+    image: biarritz,
     description: "Spot emblématique aux fonds variés, idéal pour la chasse et l’exploration.",
   },
   {
     position: [43.3827, -1.7681],
     title: "Les Roches Noires – Hendaye",
-    image: LesRochesNoires,
+    image: lesRochesNoires,
     description: "Zone rocheuse très poissonneuse, parfaite pour les chasseurs expérimentés.",
   },
   {
     position: [43.3791, -1.7689],
     title: "Rocher du Sous-Marin – Hendaye",
-    image: RocherduSousMarin,
+    image: rocherDuSousMarin,
     description: "Rocher emblématique avec un fond riche en vie marine, chasse accessible à marée basse.",
   },
   {
     position: [43.53228544409896, -1.5330919170579198],
     title: "Digue de l’Adour – Anglet",
-    image: DigueDeAdour,
+    image: digueDeAdour,
     description: "Spot à fort courant, mais très productif. À réserver aux chasseurs expérimentés.",
   },
 ];
