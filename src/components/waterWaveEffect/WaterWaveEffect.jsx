@@ -6,6 +6,8 @@ import React from 'react';
 import WaterWave from 'react-water-wave';
 import './WaterWaveEffect.css';
 
+// Trigger redeploy
+
 // Import de l'image
 import waterImg from "../../assets/water-img.jpg";
 
