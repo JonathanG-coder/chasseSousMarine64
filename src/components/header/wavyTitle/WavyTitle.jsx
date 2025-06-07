@@ -1,6 +1,6 @@
 //LIen du code pour faire bouger le texte 
 // https://examples.motion.dev/react/split-text-wavy
-
+import React from "react";
 import "./WavyTitle.css";
 import { animate, stagger } from "motion";
 import { splitText } from "motion-plus";

@@ -1,3 +1,4 @@
+import React from "react";
 import "./Home.css";
 
 //Import de WaterWaveEffect pour animé l'ondulation durant le bougement de la souris

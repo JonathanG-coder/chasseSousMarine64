@@ -3,7 +3,7 @@
 // 🐙 Céphalopodes observables en bord de côte
 // 🦞 Crustacés présents sur la côte
 // 🐟 Poissons côtiers fréquents
-
+import React from "react";
 import "./Especes.css";
 import CategoryGrid from "../../components/especesComponents/categoryGrid/CategoryGrid";
 
