@@ -7,6 +7,7 @@ import WaterWave from 'react-water-wave';
 import './WaterWaveEffect.css';
 
 // Import de l'image
+import waterImg from "../../assets/water-img.jpg";
 
 export default function WaterWaveEffect() {
   return (
