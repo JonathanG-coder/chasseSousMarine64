@@ -9,11 +9,11 @@ import './WaterWaveEffect.css';
 // Trigger redeploy
 
 // Import de l'image
-
+import poolImg from "../../assets/pool-img.jpg";
 
 export default function WaterWaveEffect() {
   return (
-    <WaterWave imageUrl={waterImg} className="waterwave-wrapper">
+    <WaterWave imageUrl={poolImg} className="waterwave-wrapper">
       {() => (
         <div className="inside-waterwave">
           {/* <p className="waterwave-text">La mer est notre terrain de jeu</p> */}
