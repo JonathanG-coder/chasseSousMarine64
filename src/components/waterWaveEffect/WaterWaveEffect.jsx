@@ -9,7 +9,8 @@ import './WaterWaveEffect.css';
 // Trigger redeploy
 
 // Import de l'image
-import waterImg from "../../assets/water-img.jpg";
+import waterImg from "../../assets/waterimg.jpg";
+
 
 export default function WaterWaveEffect() {
   return (
