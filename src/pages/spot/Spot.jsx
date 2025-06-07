@@ -5,6 +5,14 @@ import pinIcon from "../../assets/pin.png";
 import "./Spot.css";
 
 // Import des images
+import erromardie from "../../assets/spotImg/erromardie.jpg";
+import biarritz from "../../assets/spotImg/biarritz.jpg";
+import digueDeAdour from "../../assets/spotImg/digue-de-adour.jpg";
+import lesRochesNoires from "../../assets/spotImg/les-roches-noires.webp";
+import rocherDuSousMarin from "../../assets/spotImg/rocher-du-sous-marin.avif";
+import socoa from "../../assets/spotImg/socoa.jpg";
+import sainteBarbe from "../../assets/spotImg/sainte-barbe.webp";
+import cenitz from "../../assets/spotImg/cenitz.jpg";
 
 // Icône personnalisée
 const customIcon = new L.Icon({
