@@ -24,7 +24,7 @@ const handleCategoryClick = (cat) => {
 const Especes = () => {
   return (
     <div className="especeContainer">
-        <h1>Faune et flore marine côtière du 64 </h1>
+        {/* <h1>Faune et flore marine côtière du 64 </h1> */}
         <CategoryGrid categories={categoriesEspeces} onCategoryClick={handleCategoryClick}/>
     </div>
   )

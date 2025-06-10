@@ -19,7 +19,7 @@
 }
 
 /* Grands écrans : 3 colonnes */
-@media (min-width: 1024px) {
+@media (min-width: 1277px) {
   .categoryGrid {
     grid-template-columns: repeat(3, 1fr);
   }
