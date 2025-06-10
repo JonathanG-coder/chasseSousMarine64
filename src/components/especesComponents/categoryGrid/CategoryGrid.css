@@ -1,34 +1,40 @@
-
-/* * {
-  outline: 1px solid rgba(255, 0, 0, 0.5);
-} */
-
-body {
-  overflow-x: hidden;
-}
-
 .categoryGrid {
   display: grid;
   gap: 30px;
   max-width: 1000px; 
   margin: 0 auto;
   width: 100%;
+  padding: 1rem;
   box-sizing: border-box;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 200px);
-  grid-template-areas:
-    "poissons crustaces cephalopodes"
-    "algues coquillages roches";
-  
+
+  /* Par défaut : 1 colonne (mobile) */
+  grid-template-columns: 1fr;
+}
+
+/* Moyens écrans : 2 colonnes */
+@media (min-width: 640px) {
+  .categoryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Grands écrans : 3 colonnes */
+@media (min-width: 1024px) {
+  .categoryGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .grid-item {
   background-color: #f3f3f3;
   border-radius: 8px;
   overflow: hidden;
-  cursor: pointer;
   text-align: center;
   transition: transform 0.2s ease;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
 .grid-item:hover {
@@ -37,7 +43,7 @@ body {
 
 .grid-item img {
   width: 100%;
-  height: 120px;
+  height: 60%;
   object-fit: cover;
   display: block;
 }
@@ -45,24 +51,4 @@ body {
 .grid-item h3 {
   margin: 10px 0;
   font-size: 16px;
-}
-
-/* Positionnement via les grid-area */
-.area-poissons {
-  grid-area: poissons;
-}
-.area-crustaces {
-  grid-area: crustaces;
-}
-.area-cephalopodes {
-  grid-area: cephalopodes;
-}
-.area-algues {
-  grid-area: algues;
-}
-.area-coquillages {
-  grid-area: coquillages;
-}
-.area-roches {
-  grid-area: roches;
 }
