@@ -19,7 +19,7 @@ const CategoryGrid = ({ categories, onCategoryClick }) => {
   );
 };
 
-// Ajoute cette partie pour définir la validation des props
+//  défini la validation des props
 CategoryGrid.propTypes = {
   categories: PropTypes.arrayOf(
     PropTypes.shape({
