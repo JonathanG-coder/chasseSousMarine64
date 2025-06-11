@@ -18,13 +18,13 @@ import epongesMarines from "../../assets/categoryImg/eponges-marines-category-gr
 
 
 const categoriesEspeces = [
-  { nom: "Poissons", image: poisson},
-  { nom: "Crustaces", image: crustaces },
-  { nom: "Cephalopodes", image: cephalopodes },
-  { nom: "Algues", image: algues },
+  { nom: "Poissons côtiers fréquents", image: poisson},
+  { nom: "Crustacés présents sur la côte", image: crustaces },
+  { nom: "Céphalopodes observables en bord de côte", image: cephalopodes },
+  { nom: "Végétaux marins et algues", image: algues },
   { nom: "Coquillages", image: coquillages },
-  { nom: "Roches", image: roches },
-  { nom: "Eponges marines", image: epongesMarines },
+  { nom: "Types de rochers côtiers", image: roches },
+  { nom: "Animaux fixés / invertébrés", image: epongesMarines },
 ];
 
 const handleCategoryClick = (cat) => {

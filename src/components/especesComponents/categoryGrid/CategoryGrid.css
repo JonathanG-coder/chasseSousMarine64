@@ -28,27 +28,50 @@
 .grid-item {
   background-color: #f3f3f3;
   border-radius: 8px;
+  border: 1px solid grey;
   overflow: hidden;
-  text-align: center;
   transition: transform 0.2s ease;
   aspect-ratio: 1 / 1;
   display: flex;
   flex-direction: column;
-  justify-content: start;
 }
+
 
 .grid-item:hover {
   transform: scale(1.03);
 }
 
-.grid-item img {
-  width: 100%;
-  height: 60%;
-  object-fit: cover;
-  display: block;
+
+.image-category-grid {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.grid-item h3 {
-  margin: 10px 0;
-  font-size: 16px;
+
+.image-category-grid img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+
+.title-category-grid {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #264cf4;
+}
+
+
+.title-category-grid h3 {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
 }

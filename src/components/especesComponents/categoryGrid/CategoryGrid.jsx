@@ -5,17 +5,22 @@ import React from "react";
 const CategoryGrid = ({ categories, onCategoryClick }) => {
   return (
     <div className="categoryGrid">
-      {categories.map((cat, index) => (
-        <div
-          key={index}
-          className={`grid-item area-${cat.area}`}
-          onClick={() => onCategoryClick(cat)}
-        >
-          <img src={cat.image} alt={cat.nom} />
-          <h3>{cat.nom}</h3>
-        </div>
-      ))}
+  {categories.map((cat, index) => (
+    <div
+      key={index}
+      className={`grid-item area-${cat.area}`}
+      onClick={() => onCategoryClick(cat)}
+    >
+      <div className="image-category-grid">
+        <img src={cat.image} alt={cat.nom} />
+      </div>
+      <div className="title-category-grid">
+        <h3>{cat.nom}</h3>
+      </div>
     </div>
+  ))}
+</div>
+
   );
 };
 
