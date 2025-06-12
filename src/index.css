@@ -1,11 +1,11 @@
 body, * {
-cursor: url('/curseur/fishIconW.png'), auto;
+  cursor: url('/curseur/fishIconW.png'), auto;
 }
 
 html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #001f3f;
   overflow-x: hidden;
 }
-

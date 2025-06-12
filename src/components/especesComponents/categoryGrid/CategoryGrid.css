@@ -1,7 +1,7 @@
 .categoryGrid {
   display: grid;
   gap: 30px;
-  max-width: 90%; 
+  max-width: 90%;
   margin: 0 auto;
   width: 100%;
   padding: 5rem;
@@ -36,11 +36,9 @@
   flex-direction: column;
 }
 
-
 .grid-item:hover {
   transform: scale(1.03);
 }
-
 
 .image-category-grid {
   flex: 1;
@@ -48,7 +46,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 .image-category-grid img {
   max-width: 100%;
@@ -60,7 +57,6 @@
   border-radius: 8px 8px 0 0;
 }
 
-
 .title-category-grid {
   height: 60px;
   display: flex;
@@ -68,7 +64,6 @@
   align-items: center;
   background-color: #f3f3f3;
 }
-
 
 .title-category-grid h3 {
   margin: 0;
