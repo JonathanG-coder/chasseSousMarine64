@@ -29,10 +29,11 @@ const handleCategoryClick = (cat) => {
 
 const Especes = () => {
   return (
-    <>
+    <> </>
       {/* <BubbleParticles />
-      <div style={{ position: "relative", zIndex: 1, padding: "2rem", color: "white" }}>
-        <div className="especeContainer"> */}
+        //Ajout modif style css a faire
+      <div style={{ position: "relative", zIndex: 1, padding: "2rem", color: "white" }}>*/}
+        <div className="especeContainer"> 
           <h1 className="especeTitle">🪸 Faune et flore marine côtière du 64</h1>
           <CategoryGrid
             categories={categoriesEspeces}
